@@ -5,7 +5,7 @@ export const config: WebdriverIO.Config = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
-    tsConfigPath: './tsconfig.json',
+    tsConfigPath: './test/tsconfig.json',
     
     port: 4723,
     //
@@ -24,7 +24,6 @@ export const config: WebdriverIO.Config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        // ToDo: define location for spec files here
         './test/specs/**/*.ts'
     ],
     // Patterns to exclude.
@@ -56,11 +55,10 @@ export const config: WebdriverIO.Config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
-        'appium:udid': '362c0ff8',
-        'appium:deviceName': 'Hp-240-g9-Android',
-        'appium:noReset': true,
-        'appium:automationName': 'UiAutomator2',
-        'appium:newCommandTimeout': 240
+        'appium:deviceName': 'Redmi Note 13',
+        'appium:udid' : '362c0ff8',
+        'appium:platformVersion': '13.0',
+        'appium:automationName': 'UiAutomator2'
     }],
 
     //

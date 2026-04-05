@@ -2,7 +2,7 @@
   "name": "appium-ts-test",
   "type": "module",
   "devDependencies": {
-    "@types/node": "^25.5.0",
+    "@types/node": "^25.5.2",
     "@wdio/appium-service": "^9.27.0",
     "@wdio/cli": "^9.27.0",
     "@wdio/globals": "^9.27.0",
